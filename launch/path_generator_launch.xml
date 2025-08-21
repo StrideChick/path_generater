@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+  <node_container pkg="rclcpp_components" exec="component_container" name="path_generator_container" namespace="path_generator_container" >
+    <composable_node pkg="path_generator" plugin="path_generator::ResamplePath" name="path_generator_node">
+    </composable_node>
+  </node_container>
+</launch>
